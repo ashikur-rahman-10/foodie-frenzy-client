@@ -1,0 +1,28 @@
+.NotFound {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.NotFound p {
+    font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    .NotFound h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .NotFound p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .NotFound img {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}

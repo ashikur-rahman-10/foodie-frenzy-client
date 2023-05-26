@@ -1,0 +1,112 @@
+.primary-btn {
+    background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: White;
+}
+.active {
+    text-decoration: underline;
+    color: #586ceb;
+}
+.primary-btn:hover {
+    background: #7e90fe;
+    color: lightgray;
+}
+.navbar-container {
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.navs {
+    display: flex;
+    gap: 50px;
+}
+.nav {
+    padding: 5px 10px;
+    /* color: black; */
+}
+.nav:hover {
+    background-color: rgb(239, 237, 237);
+    border-radius: 5px;
+    color: #7e90fe;
+}
+.hamburger {
+    display: none;
+}
+
+/* Responsive css */
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .navs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 63px;
+        left: 0;
+        gap: 0;
+        background-color: #f9f9ff;
+        /* padding: 0 px; */
+    }
+    ._navs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -600px;
+        left: 0;
+        gap: 0;
+        /* padding: 0 px; */
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        padding: 3px 20px;
+        background-color: #f9f9ff;
+    }
+    .nav {
+        padding: 5px 60px;
+    }
+    .nav:hover {
+        background-color: rgb(239, 237, 237);
+        border-radius: 0px;
+        color: #7e90fe;
+    }
+    .hamburger {
+        display: block;
+        position: sticky;
+        left: 20px;
+        font-size: 20px;
+        color: lightslategray;
+    }
+    .navbar-container {
+        width: 100%;
+        /* padding: 8px 0; */
+        /* background-color: #f9f9ff; */
+        position: sticky;
+        top: 0;
+    }
+}
